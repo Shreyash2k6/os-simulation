@@ -1,0 +1,8 @@
+{
+  "name": " OS Lab",
+  "description": "Premium graphical operating system simulator and laboratory with interactive algorithm visualizations, reversible execution, and comprehensive benchmarking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

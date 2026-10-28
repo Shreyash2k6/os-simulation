@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C18"/>
+      <stop offset="50%" stop-color="#10172A"/>
+      <stop offset="100%" stop-color="#151E35"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#47E6D0"/>
+      <stop offset="50%" stop-color="#638BFF"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#638BFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#47E6D0" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <rect width="510" height="510" x="1" y="1" rx="111" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+
+  <!-- CPU Socket outline -->
+  <rect x="116" y="116" width="280" height="280" rx="36" fill="rgba(255,255,255,0.03)" stroke="url(#accentGrad)" stroke-width="4" filter="url(#glow)"/>
+
+  <!-- Core Circuit Traces -->
+  <path d="M 60 180 L 116 180 M 60 256 L 116 256 M 60 332 L 116 332" stroke="#638BFF" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 396 180 L 452 180 M 396 256 L 452 256 M 396 332 L 452 332" stroke="#47E6D0" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 180 60 L 180 116 M 256 60 L 256 116 M 332 60 L 332 116" stroke="#A78BFA" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 180 396 L 180 452 M 256 396 L 256 452 M 332 396 L 332 452" stroke="#638BFF" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Core Chips inside -->
+  <rect x="156" y="156" width="90" height="90" rx="16" fill="rgba(99,139,255,0.15)" stroke="#638BFF" stroke-width="2.5"/>
+  <rect x="266" y="156" width="90" height="90" rx="16" fill="rgba(71,230,208,0.15)" stroke="#47E6D0" stroke-width="2.5"/>
+  <rect x="156" y="266" width="90" height="90" rx="16" fill="rgba(167,139,250,0.15)" stroke="#A78BFA" stroke-width="2.5"/>
+  <rect x="266" y="266" width="90" height="90" rx="16" fill="rgba(240,140,255,0.15)" stroke="#F08CFF" stroke-width="2.5"/>
+
+  <!-- Center Kernel Core Symbol -->
+  <circle cx="256" cy="256" r="28" fill="#10172A" stroke="url(#accentGrad)" stroke-width="4"/>
+  <circle cx="256" cy="256" r="10" fill="#47E6D0"/>
+
+  <!-- Dynamic Process Waves -->
+  <path d="M 176 201 Q 201 185 226 201" stroke="#638BFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 286 201 Q 311 215 336 201" stroke="#47E6D0" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
